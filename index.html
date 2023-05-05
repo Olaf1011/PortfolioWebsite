@@ -155,6 +155,8 @@ Have fun creating your portfolio on this template!!! -->
       <div class="container">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Projects</h2>
+          <p class="project-wrapper__text-info">Below are some project I have worked on during my time at university.
+             Not all projects made it on here, mainly the big ones.</p>
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
@@ -206,22 +208,9 @@ Have fun creating your portfolio on this template!!! -->
                 I also created it for use in my dissertation, where I used to to create
                 multiple different particle effects either running on the CPU or using 
                 the compute shader to run it purely on the GPU. 
+                Being made as a way for me to practice shaders. I made it hotswappable so I can quickly change out shaders and try new things.
                 <br><i>The source code is currently private as it is still being graded for its use in my dissertation</i>
               </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Learn More</a
-                >
-                <a 
-                  href="https://github.com/Olaf1011/Magma-Library" 
-                  target="_blank" 
-                  class="cta-btn text-color-main"
-                  >Source Code</a>
-              </div>
             </div>
 
             <div class="project-wrapper__image">
@@ -391,6 +380,36 @@ Have fun creating your portfolio on this template!!! -->
             </div>
           </article>
           <!-- /END Project -->
+                    <!-- Each .row is a project -->
+                    <article class="row">
+                      <div class="project-wrapper__text">
+                        <h3 class="project-wrapper__text-title">Threading and SIMD project</h3>
+                        <p class="project-wrapper__text-info"><b>Core Skills:</b> C++, SIMD, Pthreads, Semaphores, Optimising code</p>
+                        <p class="project-wrapper__text-info">
+                          For project 2 of my master's degree we were tasked with optimising code in a project given to us.
+                          We were giving 3 options of techniques to chose from. SIMD, Threading, and compute shader. I choose SIMD and Threading
+                          as I already done my dissertation using the compute shader. The task was to take the code and convert it to use
+                          either techinque. For the SIMD version I managed to go from 35ms per frame to 2ms per frame and doubling the amount 
+                          of object on screen as that was tited to the frame rate.<br>
+                          As for Threading I focused on making a better solution than my disseration using semaphores to put the threads to sleep.
+                          Creating a system that doesn't have to create new threads each update. For this version I went from 43ms per frame, to 6.3ms per frame.
+                        </p>
+                      </div>
+                      <div class="project-wrapper__image">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                          <div class="thumbnail rounded">
+                            <img
+                              src="./assets/ThreadSimd.png"
+                              class="img-fluid"
+                              alt="Project Image"
+                              width="1366"
+                              height="767"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                    <!-- /END Project -->
         </div>
       </div>
     </section>
